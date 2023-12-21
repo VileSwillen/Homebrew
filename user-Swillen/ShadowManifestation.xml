@@ -94,7 +94,7 @@
             <p>At 7th level, your power as a vessel for the creature from the shadowfell has increased to the point where your senses have merged slightly, as a result, you gain proficiency in Wisdom (Perception) checks and can not be surprised whilst conscious.</p>
         </description>
         <sheet>
-            <description> You gain proficiency in Wisdom (Perception) checks and can not be surprised whilst conscious.
+            <description> You gain proficiency in Wisdom (Perception) checks and can not be surprised whilst conscious.</description>
         </sheet>
         <rules>
             <grant type="Proficiency" name="Visions From The Shadows" supports="ID_PROFICIENCY_SKILL_PERCEPTION"/>
