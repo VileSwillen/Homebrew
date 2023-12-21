@@ -12,8 +12,7 @@
             <p>You have accepted a bond with a creature of the Shadowfell that reached out to you in hopes of using you as a conduit to enter into your plane. This bond doesn’t only work out in their favour though, as you gain access to some of it’s power. Your access to this pool of power grows as you advance as their vessel</p>
             <div element="ID_WCS_SHADOWMANIFESTATION_FORMS"/>
             <div element="ID_WCS_SHADOWMANIFESTATION_INSANITY"/>
-            <div element="ID_WCS_SHADOWMANIFESTATION_SYMBIOTIC_RELATIONSHIP_ARMS"/>
-            <div element="ID_WCS_SHADOWMANIFESTATION_SYMBIOTIC_RELATIONSHIP_TORSO"/>
+            <div element="ID_WCS_SHADOWMANIFESTATION_SYMBIOTIC_RELATIONSHIP"/>
             <div element="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION"/>
             <div element="ID_WCS_SHADOWMANIFESTATION_VISIONS_FROM_THE_SHADOWS"/>
             <div element="ID_WCS_SHADOWMANIFESTATION_BLOODLUST"/>
