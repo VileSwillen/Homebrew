@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Shadow Manifestation</name>
-        <update version="0.03.1">
+        <update version="0.04">
             <file name="ShadowManifestation" url="https://raw.https://raw.githubusercontent.com/VileSwillen/Homebrew/main/user-Swillen/ShadowManifestation.xml" />
         </update>
     </info>
