@@ -89,6 +89,7 @@
             <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_ARMS" level="3"/>
             <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_TORSO" level="7"/>
         </rules>
+    </element>
     <element name="Visions From The Shadows" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_VISIONS_FROM_THE_SHADOWS">
         <description>
             <p>At 7th level, your power as a vessel for the creature from the shadowfell has increased to the point where your senses have merged slightly, as a result, you gain proficiency in Wisdom (Perception) checks and can not be surprised whilst conscious.</p>
