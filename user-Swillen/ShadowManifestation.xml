@@ -97,7 +97,7 @@
             <description> You gain proficiency in Wisdom (Perception) checks and can not be surprised whilst conscious.</description>
         </sheet>
         <rules>
-            <grant type="Proficiency" name="Visions From The Shadows" supports="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
         </rules>
     </element>
     <element name="Bloodlust" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_BLOODLUST">
