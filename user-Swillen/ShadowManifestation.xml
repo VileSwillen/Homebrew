@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Shadow Manifestation</name>
+        <update version="0.03">
+            <file name="ShadowManifestation" url="https://raw.https://raw.githubusercontent.com/VileSwillen/Homebrew/main/user-Swillen/ShadowManifestation.xml" />
+        </update>
+    </info>
+    <element name="Shadow Manifestation" type="Archetype" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>You have accepted a bond with a creature of the Shadowfell that reached out to you in hopes of using you as a conduit to enter into your plane. This bond doesn’t only work out in their favour though, as you gain access to some of it’s power. Your access to this pool of power grows as you advance as their vessel</p>
+            <div element="ID_WCS_SHADOWMANIFESTATION_FORMS"/>
+            <div element="ID_WCS_SHADOWMANIFESTATION_INSANITY"/>
+            <div element="ID_WCS_SHADOWMANIFESTATION_SYMBIOTIC_RELATIONSHIP_ARMS"/>
+            <div element="ID_WCS_SHADOWMANIFESTATION_SYMBIOTIC_RELATIONSHIP_TORSO"/>
+            <div element="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION"/>
+            <div element="ID_WCS_SHADOWMANIFESTATION_VISIONS_FROM_THE_SHADOWS"/>
+            <div element="ID_WCS_SHADOWMANIFESTATION_BLOODLUST"/>
+        </description>
+        <setters>
+            <set name="override">true</set>
+        </setters>
+        <sheet display="false">
+            <description>You have accepted a bond with a creature of the Shadowfell that reached out to you in hopes of using you as a conduit to enter into your plane. This bond doesn’t only work out in their favour though, as you gain access to some of it’s power. Your access to this pool of power grows as you advance as their vessel</p>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_FORMS" level="3"/>
+            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_INSANITY" level="3"/>
+            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_SYMBIOTIC_RELATIONSHIP" level="3"/>
+            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION" level="3"/>
+            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VISIONS_FROM_THE_SHADOWS" level="7"/>
+            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_BLOODLUST" level="7"/>
+        </rules>
+    </element>
+    <element name="Forms" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_FORMS">
+        <description>
+            <p>The manifestation is the physical embodiment of the writhing darkness shared by you and this creature, it is up to you for how this manifestation appears, whether it be yourself or something not even humanoid. Your manifestations appearance is unique to the vessels situation.</p>
+        </description>
+        <sheet display="false">
+            <description>The manifestation is the physical embodiment of the writhing darkness shared by you and this creature, it is up to you for how this manifestation appears, whether it be yourself or something not even humanoid. Your manifestations appearance is unique to the vessels situation.</description>
+        </sheet>
+    </element>
+    <element name="Insanity" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_INSANITY">
+        <description>
+            <p>You harbour a wellspring of Insanity within yourself. This energy is represented by your Insanity dice, which is a d4 at 1st level, this increases to a d6 at 6th level, d8 at 9th level, d10 at 12th level, and d12 at 15th level</p>
+            <p>You also have a constant state of insanity, which increases as you manifest this creature. Whenever you roll an insanity die, add the number rolled to your current insanity.</p>
+            <p class="indent">Insanity threshold = Insanity die maximum + fighter level</p>
+        </description>
+        <sheet usage="Proficiency/Long Rest">
+            <description>You have a number of these dice equal to your proficiency bonus, and they fuel various insanity features that you gain. You regain all expended dice after a long rest. Alternatively, after a short rest, you may sacrifice a hit die and regain one expelled Insanity die.</description>
+        </sheet>
+        <rules>
+            <stat name="insanity:die" value="4" level="3"/>
+            <stat name="insanity:die" value="6" level="6"/>
+            <stat name="insanity:die" value="8" level="9"/>
+            <stat name="insanity:die" value="10" level="12"/>
+            <stat name="insanity:die" value="12" level="15"/>
+
+            <stat name="insanity:pool:die>" value="insanity:die" bonus="insanity:die"/>
+            <stat name="insanity:pool:proficiency" value="level:fighter" bonus="level:fighter"/>
+
+            <stat name="insanity:pool" value="insanity:pool:die"/>
+            <stat name="insanity:pool" value="insanity:pool:proficiency"/>
+        </rules>
+    </element>
+    <element name="Symbiotic Relationship" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_SYMBIOTIC_RELATIONSHIP">
+        <description>
+            <p>Upon becoming a vessel at 3rd level, you gain these benefits:</p>
+            <p class="indent">You can see in darkness, both magical and non-magical, to a distance of 60ft</p>
+            <p class="indent">You are no longer able to sleep, you instead may meditate for 4 hours to complete a short rest, or 8 hours to complete a long rest</p>
+        </description>
+        <sheet>
+            <description> You can see in darkness, both magical and non-magical, to a distance of 60ft. You also cannot sleep, instead meditating to achieve short or long rests.</description>
+        </sheet>
+    </element>
+    <element name="Violent Manifestation" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION">
+        <description>
+            <p>As a vessel for a shadowfell creature, you may command this creature to manifest and fight with you for 1 minute</p>
+            <p>When attempting to manifest, if you are above half your insanity threshold, roll a wisdom saving throw against a DC equal to half of your current insanity. On a failure, you take 1 point of exhaustion</p>
+        </description>
+        <sheet usage="proficiency/Long Rest">
+            <description>
+                <p>As a vessel for a shadowfell creature, you may command this creature to manifest and fight with you for 1 minute</p>
+                <p>When attempting to manifest, if you are above half your insanity threshold, roll a wisdom saving throw against a DC equal to half of your current insanity. On a failure, you take 1 point of exhaustion</p>
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_ARMS" level="3">
+            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_TORSO" level="7">
+        </rules>
+    <element name="Visions From The Shadows" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_VISIONS_FROM_THE_SHADOWS">
+        <description>
+            <p>At 7th level, your power as a vessel for the creature from the shadowfell has increased to the point where your senses have merged slightly, as a result, you gain proficiency in Wisdom (Perception) checks and can not be surprised whilst conscious.</p>
+        </description>
+        <sheet>
+            <description> You gain proficiency in Wisdom (Perception) checks and can not be surprised whilst conscious.
+        </sheet>
+        <rules>
+            <grant type="Proficiency" name="Visions From The Shadows" supports="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+        </rules>
+    </element>
+    <element name="Bloodlust" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_BLOODLUST">
+        <description>
+            <p>When you reach 7th level, your insanity can cause you to see red and enter a state of bloodlust</p>
+            <p>Once per round, when you take damage, roll an insanity die and add that number to your current insanity. If your insanity increases past your threshold, you enter this state of bloodlust and must roll a Constitution saving throw of DC 15. On a failure, your maximum hitpoints temporarily reduces by the difference between the DC and your roll until you take a long rest.</p>
+            <p>You gain these features while in a state of bloodlust:</p>
+            <p class="indent">You take a point of exhaustion</p>
+            <p class="indent">You gain temporary hit points equal to twice your proficiency bonus</p>
+            <p class="indent">Your weapon attacks deal an additional 1d6 damage of your weapon’s damage type.</p>
+            <p class="indent">You are immune to the frightened condition, and Charisma (Intimidation) checks against you are made with disadvantage.</p>
+            <p class="indent">At the start of each of your turns, make a wisdom saving throw of DC 15. On a failure you must use all of your movement to reach the nearest hostile creature and make a melee attack roll against them. If you cannot reach the target, you must take the dash action.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>Once per round, when you take damage, roll an insanity die and add that number to your current insanity. If your insanity increases past your threshold, you enter this state of bloodlust and must roll a Constitution saving throw of DC 15. On a failure, your maximum hitpoints temporarily reduces by the difference between the DC and your roll until you take a long rest.</p>
+                <p>You gain these features while in a state of bloodlust:</p>
+                <p class="indent">You take a point of exhaustion</p>
+                <p class="indent">You gain temporary hit points equal to twice your proficiency bonus</p>
+                <p class="indent">Your weapon attacks deal an additional 1d6 damage of your weapon’s damage type.</p>
+                <p class="indent">You are immune to the frightened condition, and Charisma (Intimidation) checks against you are made with disadvantage.</p>
+                <p class="indent">At the start of each of your turns, make a wisdom saving throw of DC 15. On a failure you must use all of your movement to reach the nearest hostile creature and make a melee attack roll against them. If you cannot reach the target, you must take the dash action.</p>
+            </description>
+        </sheet>
+    </element>
+    <!--Manifestation Types-->
+    <element name="Manifest Arms" type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_ARMS">
+        <description>
+            <p>At 3rd level, as a bonus action, you may manifest your companion’s arms to alter your melee attacks. While the arms are manifested, you gain these benifits:</p>
+            <p class="indent">When you make a melee attack, you may add one insanity die of psychic damage to your damage roll</p>
+            <p class="indent">You add your insanity die to any grappling checks you perform</p>
+            <p class="indent">Climbing doesn’t cost any extra movement.</p>
+        </description>
+        <sheet>
+            <description>
+                <p>As a bonus action, you may manifest your companion’s arms to alter your melee attacks. While the arms are manifested, you gain these benifits:</p>
+                <p class="indent">When you make a melee attack, you may add one insanity die of psychic damage to your damage roll</p>
+                <p class="indent">You add your insanity die to any grappling checks you perform</p>
+                <p class="indent">Climbing doesn’t cost any extra movement.</p>
+            </description>
+        </sheet>
+    </element>
+    <element name="Manifest Torso" type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_TORSO">
+        <description>
+            <p>At 7th level, as a bonus action, you may manifest the chest of this creature. While the chest is manifested, you gain these benifits:</p>
+            <p class="indent">Your armor class increases by 2</p>
+            <p class="indent">You have proficiency with Charisma (Intimidation) checks</p>
+        </description>
+        <sheet>
+            <description>
+                <p>As a bonus action, you may manifest the chest of this creature. While the chest is manifested, you gain these benifits:</p>
+                <p class="indent">Your armor class increases by 2</p>
+                <p class="indent">You have proficiency with Charisma (Intimidation) checks</p>
+            </description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="2"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+        </rules>
+    </element>
+</elements>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name>Will's Chaotic Shit</name>
+        <update version="0.1">
+            <file name="user-Swillen.index" url="https://raw.githubusercontent.com/VileSwillen/Homebrew/main/user-Swillen.index"/>
+        </update>
+    </info>
+    <files>
+        <file name="ShadowManifestation.xml" url="https://raw.githubusercontent.com/VileSwillen/Homebrew/main/user-Swillen/ShadowManifestation.xml"/>
+    </files>
+</index>
