@@ -86,8 +86,8 @@
             </description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_ARMS" level="3">
-            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_TORSO" level="7">
+            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_ARMS" level="3"/>
+            <grant type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_TORSO" level="7"/>
         </rules>
     <element name="Visions From The Shadows" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_VISIONS_FROM_THE_SHADOWS">
         <description>
