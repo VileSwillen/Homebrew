@@ -125,7 +125,7 @@
         </sheet>
     </element>
     <!--Manifestation Types-->
-    <element name="Manifest Arms" type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_ARMS">
+    <element name="Manifest Arms" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_ARMS">
         <description>
             <p>At 3rd level, as a bonus action, you may manifest your companion’s arms to alter your melee attacks. While the arms are manifested, you gain these benifits:</p>
             <p class="indent">When you make a melee attack, you may add one insanity die of psychic damage to your damage roll</p>
@@ -141,7 +141,7 @@
             </description>
         </sheet>
     </element>
-    <element name="Manifest Torso" type="Archetype Feature" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_TORSO">
+    <element name="Manifest Torso" type="Archetype Feature" source="Will's Chaotic Shit" id="ID_WCS_SHADOWMANIFESTATION_VIOLENT_MANIFESTATION_TORSO">
         <description>
             <p>At 7th level, as a bonus action, you may manifest the chest of this creature. While the chest is manifested, you gain these benifits:</p>
             <p class="indent">Your armor class increases by 2</p>
